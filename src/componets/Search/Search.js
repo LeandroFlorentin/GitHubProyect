@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IconButton, Stack, TextField, Switch } from "@mui/material";
+import { IconButton, Stack, TextField, Switch, FormControl, FormLabel, FormHelperText } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import { useDispatch } from 'react-redux'
 import { darkMode } from '../../redux/actions'
@@ -51,7 +51,7 @@ const Search = (props) => {
                 }}>
                 <SearchIcon size='small' />
             </IconButton>
-            <Switch onClick={darkModeOn} />
+            <Switch onClick={darkModeOn} color='secondary' />
         </Stack>
     )
 }

@@ -13,6 +13,9 @@ const App = () => {
   const darkTheme = createTheme({
     palette: {
       mode: modo,
+      secondary: {
+        main: '#000'
+      }
     }
   })
   const dispatch = useDispatch()
